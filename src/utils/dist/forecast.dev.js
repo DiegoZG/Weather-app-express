@@ -15,7 +15,7 @@ var forecast = function forecast(latitude, longitude, callback) {
     } else if (body.error) {
       callback('Unable to find location!');
     } else {
-      callback(undefined, "".concat(body.current.weather_descriptions[0], ". It is currently ").concat(body.current.temperature, " degrees out. \n            It feels like ").concat(body.current.feelslike, " degrees out. The humidity is ").concat(body.current.humidity, "%. Y JUAN ES UN IMBECIL DE MIERDA"));
+      callback(undefined, "".concat(body.current.weather_descriptions[0], ". It is currently ").concat(body.current.temperature, " degrees out. \n            It feels like ").concat(body.current.feelslike, " degrees out. The humidity is ").concat(body.current.humidity, "%."));
     }
   });
 };
